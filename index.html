@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de pesos a dolares</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./phone.css"
+      media="screen and (max-width: 768px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="titulo">Conversor de moneda</h1>
+      <div class="main-selector">
+        <label for="tipoConversion"
+          >Elija el tipo de conversion que busca:</label
+        >
+        <select id="tipoConversion">
+          <option value=""></option>
+          <option value="pesoBlue">De Dolar Blue a ARS</option>
+          <option value="pesoOficial">De Dolar Oficial a ARS</option>
+          <option value="dolarBlue">De ARS a Dolar Blue</option>
+          <option value="dolarOficial">De ARS a Dolar Oficial</option>
+        </select>
+      </div>
+      <div class="main-input">
+        <label for="numeroAConvertir">Ingrese el valor a convertir:</label>
+        <input id="numeroAConvertir" type="number" />
+        <button onclick="conversion()">Convertir</button>
+      </div>
+      <div class="main-resultado">
+        <h3 id="resultado"></h3>
+      </div>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>
